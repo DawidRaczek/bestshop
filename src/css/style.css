@@ -30,6 +30,7 @@ a {
     padding: 0 136px;
     z-index: 42;
     opacity: 1;
+    background: var(--white);
 }
 
 .header .header__inner {
@@ -89,7 +90,12 @@ a {
     left: 0;
 }
 
+.header .logo__text {
+    cursor: pointer;
+}
+
 .main {
+    padding-top: 8rem;
 }
 
 .main .main__inner {
@@ -132,6 +138,82 @@ a {
     padding: 1.375rem 7.875rem;
 }
 
+.main__sales-info {
+    background: var(--white);
+    transform: translateY(-75px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.main__sales-info .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.icons .icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-wrapper .icon {
+    position: relative;
+
+}
+
+.icon .icon-image {
+    width: 44px;
+    height: 52px;
+}
+
+.icon-wrapper .icon::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-wrapper .icon-person::before {
+    background-color: var(--red);
+}
+
+.icon-wrapper .icon-eye::before {
+    background-color: var(--primary-color);
+}
+
+.icon-wrapper .icon-folder::before {
+    background-color: var(--green);
+}
+
+.main__sales-info .sales-info-title {
+    font-family: var(--font-raleway);
+    font-weight: 400;
+}
+
+.icon-wrapper .amount {
+    font-family: var(--font-raleway);
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.icon-wrapper .info {
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--grey);
+    text-align: center;
+}
 
 
 
